@@ -68,10 +68,21 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-datadadaGray-700 mt-8 pt-8 text-center">
+        <div className="border-t border-datadadaGray-700 mt-8 pt-8 text-center space-y-3">
           <p className="text-datadadaGray-400 text-sm">
             &copy; {new Date().getFullYear()} {BRAND_NAME}. All rights reserved. |
             <span className="text-datadadaYellow-400 ml-1">Empowering Educational Outreach</span>
+          </p>
+          <p className="text-datadadaGray-400 text-sm">
+            Developed by{" "}
+            <a
+              href="https://nexturex.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold bg-gradient-to-r from-datadadaYellow-400 via-datadadaYellow-500 to-datadadaYellow-600 bg-clip-text text-transparent hover:from-datadadaYellow-300 hover:via-datadadaYellow-400 hover:to-datadadaYellow-500 transition-all duration-300 hover:scale-105 inline-block"
+            >
+              NextureX
+            </a>
           </p>
         </div>
       </div>

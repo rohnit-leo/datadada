@@ -1,0 +1,26 @@
+{
+  "name": "DataDADA - Premium Student Database Solutions",
+  "short_name": "DataDADA",
+  "description": "Access verified student databases across India with 500K+ records. Perfect for educational institutions, coaching centers & businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#EAB308",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
