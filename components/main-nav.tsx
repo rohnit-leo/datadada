@@ -16,10 +16,10 @@ export function MainNav() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-datadadaGray-200 bg-white/95 backdrop-blur-md shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-datadadaGray-200 bg-gradient-to-r from-datadadaGray-50 to-datadadaYellow-50/30 backdrop-blur-md shadow-sm">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-4 group">
-          <div className="relative w-16 h-16 p-2 bg-white rounded-xl shadow-md group-hover:shadow-lg transition-all duration-300 border border-datadadaGray-100">
+          <div className="relative w-16 h-16 p-2 bg-white/90 rounded-xl shadow-md group-hover:shadow-lg transition-all duration-300 border border-datadadaGray-100">
             <Image
               src="/images/datadada-logo.png"
               alt={`${BRAND_NAME} Logo`}
@@ -66,7 +66,7 @@ export function MainNav() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white">
               <div className="flex items-center space-x-3 mb-8">
-                <div className="relative w-12 h-12 p-1 bg-datadadaYellow-50 rounded-lg border border-datadadaYellow-200">
+                <div className="relative w-12 h-12 p-1 bg-white/90 rounded-lg border border-datadadaYellow-200">
                   <Image src="/images/datadada-logo.png" alt={`${BRAND_NAME} Logo`} fill className="object-contain" />
                 </div>
                 <div className="flex flex-col">
