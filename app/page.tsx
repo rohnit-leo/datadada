@@ -53,18 +53,18 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-datadadaGray-50 via-white to-datadadaYellow-50 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-amber-50 via-datadadaYellow-50 to-orange-50 overflow-hidden">
         <div className="absolute inset-0 bg-hero-pattern opacity-40"></div>
         <div className="relative container py-20 lg:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left space-y-8 animate-fade-in">
               <div className="space-y-6">
-                <Badge className="bg-datadadaYellow-100 text-datadadaYellow-800 border-datadadaYellow-200 hover:bg-datadadaYellow-200 text-sm px-4 py-2 font-medium">
+                <Badge className="bg-gradient-to-r from-datadadaYellow-200 to-amber-200 text-datadadaYellow-900 border-datadadaYellow-300 hover:from-datadadaYellow-300 hover:to-amber-300 text-sm px-4 py-2 font-medium shadow-md">
                   🚀 Premium Student Database Platform
                 </Badge>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-datadadaText leading-tight">
                   Welcome to{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-datadadaYellow-600 to-datadadaYellow-500">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-datadadaYellow-600 via-amber-500 to-orange-500">
                     {BRAND_NAME}
                   </span>
                 </h1>
@@ -79,7 +79,7 @@ export default function HomePage() {
                 <Link href="/databases">
                   <Button
                     size="lg"
-                    className="bg-datadadaYellow-500 hover:bg-datadadaYellow-600 text-white font-bold px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                    className="bg-gradient-to-r from-datadadaYellow-500 to-amber-500 hover:from-datadadaYellow-600 hover:to-amber-600 text-white font-bold px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
                   >
                     Explore Databases
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -89,7 +89,7 @@ export default function HomePage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-2 border-datadadaGray-300 text-datadadaGray-700 hover:bg-datadadaGray-50 hover:border-datadadaYellow-500 hover:text-datadadaYellow-600 font-bold px-8 py-4 text-lg rounded-xl transition-all duration-200 transform hover:scale-105 bg-transparent"
+                    className="border-2 border-datadadaYellow-400 text-datadadaYellow-700 hover:bg-gradient-to-r hover:from-datadadaYellow-500 hover:to-amber-500 hover:border-transparent hover:text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-200 transform hover:scale-105 bg-white/80 backdrop-blur-sm"
                   >
                     Contact Us
                   </Button>
@@ -99,7 +99,7 @@ export default function HomePage() {
 
             <div className="flex justify-center lg:justify-end animate-fade-in">
               <div className="relative">
-                <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-datadadaYellow-100 to-datadadaYellow-200 rounded-full flex items-center justify-center shadow-2xl animate-float">
+                <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-datadadaYellow-200 via-amber-200 to-orange-200 rounded-full flex items-center justify-center shadow-2xl animate-float border-4 border-white/30">
                   <div className="relative w-64 h-64 lg:w-80 lg:h-80">
                     <Image
                       src="/images/datadada-logo.png"
@@ -120,13 +120,13 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white border-t border-datadadaGray-100">
+      <section className="py-16 bg-gradient-to-r from-white via-datadadaYellow-50 to-amber-50 border-t border-datadadaYellow-100">
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center space-y-3 animate-slide-in group">
-                <div className="flex items-center justify-center w-16 h-16 bg-datadadaYellow-100 rounded-full mx-auto group-hover:bg-datadadaYellow-200 transition-colors">
-                  <stat.icon className="h-8 w-8 text-datadadaYellow-600" />
+                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-datadadaYellow-200 to-amber-200 rounded-full mx-auto group-hover:from-datadadaYellow-300 group-hover:to-amber-300 transition-all duration-300 shadow-md">
+                  <stat.icon className="h-8 w-8 text-datadadaYellow-700" />
                 </div>
                 <div className="text-3xl lg:text-4xl font-bold text-datadadaText">{stat.number}</div>
                 <div className="text-datadadaGray-600 font-medium">{stat.label}</div>
@@ -137,10 +137,10 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gradient-to-b from-datadadaGray-50 to-white">
+      <section className="py-20 bg-gradient-to-b from-amber-50 via-datadadaYellow-50 to-white">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-datadadaBlue-100 text-datadadaBlue-800 border-datadadaBlue-200 px-4 py-2">
+            <Badge className="bg-gradient-to-r from-datadadaBlue-100 to-cyan-100 text-datadadaBlue-800 border-datadadaBlue-200 px-4 py-2 shadow-sm">
               Why Choose Us
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-datadadaText">Why Choose {BRAND_NAME}?</h2>
@@ -180,7 +180,7 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-green-100 text-green-800 border-green-200 px-4 py-2">
+              <Badge className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-800 border-green-200 px-4 py-2 shadow-sm">
                 <Clock className="h-4 w-4 mr-2" />
                 Trusted Since 2020
               </Badge>
@@ -217,10 +217,10 @@ export default function HomePage() {
       </section>
 
       {/* Categories Section */}
-      <section className="py-20 bg-gradient-to-b from-datadadaGray-50 to-white">
+      <section className="py-20 bg-gradient-to-b from-amber-50 via-datadadaYellow-50 to-white">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-datadadaYellow-100 text-datadadaYellow-800 border-datadadaYellow-200 px-4 py-2">
+            <Badge className="bg-gradient-to-r from-datadadaYellow-200 to-amber-200 text-datadadaYellow-900 border-datadadaYellow-300 px-4 py-2 shadow-md">
               Database Categories
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-datadadaText">Our Database Categories</h2>
@@ -261,7 +261,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-datadadaYellow-500 to-datadadaYellow-400">
+      <section className="py-20 bg-gradient-to-r from-datadadaYellow-500 via-amber-500 to-orange-400">
         <div className="container text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-white">Ready to Transform Your Outreach?</h2>
@@ -273,7 +273,7 @@ export default function HomePage() {
               <Link href="/databases">
                 <Button
                   size="lg"
-                  className="bg-white text-datadadaYellow-600 hover:bg-datadadaGray-50 font-bold px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                  className="bg-white text-datadadaYellow-700 hover:bg-gray-50 font-bold px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
                 >
                   Browse All Databases
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -283,7 +283,7 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-2 border-white text-white hover:bg-white hover:text-datadadaYellow-600 font-bold px-8 py-4 text-lg rounded-xl transition-all duration-200 transform hover:scale-105 bg-transparent"
+                  className="border-2 border-white text-white hover:bg-white hover:text-datadadaYellow-700 font-bold px-8 py-4 text-lg rounded-xl transition-all duration-200 transform hover:scale-105 bg-transparent backdrop-blur-sm"
                 >
                   Learn More
                 </Button>

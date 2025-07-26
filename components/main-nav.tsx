@@ -16,10 +16,10 @@ export function MainNav() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-datadadaGray-200 bg-gradient-to-r from-datadadaGray-50 to-datadadaYellow-50/30 backdrop-blur-md shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-datadadaGray-200 bg-gradient-to-r from-datadadaYellow-400 via-datadadaYellow-300 to-amber-200 backdrop-blur-md shadow-lg">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-4 group">
-          <div className="relative w-16 h-16 p-2 bg-white/90 rounded-xl shadow-md group-hover:shadow-lg transition-all duration-300 border border-datadadaGray-100">
+          <div className="relative w-16 h-16 p-2 bg-white rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-white/50">
             <Image
               src="/images/datadada-logo.png"
               alt={`${BRAND_NAME} Logo`}
@@ -29,8 +29,8 @@ export function MainNav() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-datadadaText text-2xl tracking-wide">{BRAND_NAME}</span>
-            <span className="text-xs text-datadadaGray-500 font-medium">Premium Student Databases</span>
+            <span className="font-bold text-white text-2xl tracking-wide drop-shadow-sm">{BRAND_NAME}</span>
+            <span className="text-xs text-white/90 font-medium drop-shadow-sm">Premium Student Databases</span>
           </div>
         </Link>
 
@@ -40,10 +40,10 @@ export function MainNav() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-base font-medium transition-all duration-200 hover:text-datadadaYellow-600 relative px-3 py-2 rounded-lg",
+                "text-base font-medium transition-all duration-200 hover:text-white relative px-3 py-2 rounded-lg",
                 pathname === link.href
-                  ? "text-datadadaYellow-600 bg-datadadaYellow-50 after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1 after:h-1 after:bg-datadadaYellow-600 after:rounded-full"
-                  : "text-datadadaGray-700 hover:bg-datadadaGray-50",
+                  ? "text-white bg-white/20 backdrop-blur-sm after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1 after:h-1 after:bg-white after:rounded-full"
+                  : "text-white/90 hover:bg-white/10 hover:text-white",
               )}
             >
               {link.name}
@@ -57,7 +57,7 @@ export function MainNav() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-10 w-10 text-datadadaGray-700 hover:bg-datadadaGray-100"
+                className="h-10 w-10 text-white hover:bg-white/20"
                 onClick={() => setIsOpen(true)}
               >
                 <Menu className="h-6 w-6" />
