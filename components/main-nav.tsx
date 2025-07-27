@@ -16,7 +16,7 @@ export function MainNav() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-datadadaGray-200 bg-gradient-to-r from-datadadaYellow-400 via-datadadaYellow-300 to-amber-200 backdrop-blur-md shadow-lg">
+    <header className="sticky top-0 z-50 w-full border-b border-datadadaGray-200 bg-gradient-to-r from-datadadaYellow-600 via-datadadaYellow-500 to-amber-500 backdrop-blur-md shadow-lg">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-4 group">
           <div className="relative w-16 h-16 p-2 bg-white rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-white/50">
